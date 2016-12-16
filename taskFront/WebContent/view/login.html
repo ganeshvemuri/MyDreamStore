@@ -1,0 +1,61 @@
+<div>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/taskHome.js"></script>
+<style>
+body {
+   /*  background-image: url("https://d13yacurqjgara.cloudfront.net/users/380268/screenshots/1187493/timelapse-2.gif.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-right: 200px; */
+    background-color:#ccccff;
+}
+
+*[role="form"] {
+    max-width: 500px;
+    padding: 5px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+</style>
+
+<body>
+<div class="container">
+            <form class="form-horizontal" role="form" name="myForm">
+                <h2>Login Here!!!</h2>
+                <div class="form-group">
+                    <label for="username" class="col-sm-3 control-label">Username</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="username" ng-model="username" placeholder="Name" class="form-control" >
+                        
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" name="password" ng-model="password" placeholder="Password" class="form-control">
+                    </div>
+                </div>
+                
+                
+
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button ng-click="login()" class="btn btn-primary btn-block">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>  
+   </body>
+   </html>
+   </div>
